@@ -50,3 +50,14 @@ graph->AddNewEdge(0, 3, 4); \
 graph->AddNewEdge(3, 4, 2); \
 graph->AddNewEdge(0, 2, 3); \
 }
+
+//weighted testcase-three
+#define w_testcase_three(graph){\
+graph->AddNewEdge(0, 1, 1); \
+graph->AddNewEdge(0, 4, 3); \
+graph->AddNewEdge(1, 2, 2); \
+graph->AddNewEdge(1, 3, 5); \
+graph->AddNewEdge(1, 4, 2); \
+graph->AddNewEdge(2, 3, 4); \
+graph->AddNewEdge(3, 4, 1); \
+}

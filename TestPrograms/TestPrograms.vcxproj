@@ -153,12 +153,12 @@
     <ClInclude Include="src\GraphTestCases.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\test.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DSAlib\DSAlib.vcxproj">
       <Project>{0bf69c45-d2a6-480f-b839-d441c7bd45ce}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

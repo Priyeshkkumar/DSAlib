@@ -9,11 +9,13 @@ int main() {
  	/*unique_ptr<UGraph> graph = make_unique<UGraph>(5);*/
     /*UGraph* graph = new UGraph(5);*/
     /*std::shared_ptr<UGraph> graph = make_shared<UGraph>(5);*/
-    DWGraph* graph = new DWGraph(9);
+    DWGraph* graph = new DWGraph(5);
 
-    w_testcase_two(graph);
+    w_testcase_three(graph);
    
     graph->Display();
+
+    Dijkstra(graph, 0);
 
     /*BFS(graph, 0);
     DFS(graph, 0);*/
