@@ -150,6 +150,7 @@
     <ClInclude Include="src\DataStructures\BinaryTree.h" />
     <ClInclude Include="src\DataStructures\graph.h" />
     <ClInclude Include="src\DataStructures\Heap.h" />
+    <ClInclude Include="src\DataStructures\LinkedList.h" />
     <ClInclude Include="src\DataStructures\Node.h" />
     <ClInclude Include="src\DataStructures\Queue.h" />
     <ClInclude Include="src\DataStructures\Stack.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="src\DataStructures\BinaryTree.cpp" />
     <ClCompile Include="src\DataStructures\graph.cpp" />
     <ClCompile Include="src\DataStructures\Heap.cpp" />
+    <ClCompile Include="src\DataStructures\LinkedList.cpp" />
     <ClCompile Include="src\DataStructures\Queue.cpp" />
     <ClCompile Include="src\DataStructures\Stack.cpp" />
   </ItemGroup>

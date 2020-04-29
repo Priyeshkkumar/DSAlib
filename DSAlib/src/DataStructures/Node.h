@@ -1,10 +1,15 @@
 #pragma once
+#include<iostream>
 
 //A Class to represent a node with a single pointer to pointing to next node...
 class Node {
 	int value;
 	Node* next;
 public:
+	Node() {
+		value = NULL;
+		next = nullptr;
+	}
 	int GetNodeValue() {
 		return value;
 	}
@@ -16,10 +21,6 @@ public:
 	}
 	void SetNodeNext(Node* ptr) {
 		next = ptr;
-	}
-	Node() {
-		value = 0;
-		next = NULL;
 	}
 };
 
