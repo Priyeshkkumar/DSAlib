@@ -11,7 +11,7 @@ void S_LinkedList::SLL_add_front(int element) {
 		temp->SetNodeNext(nullptr);
 	}
 	else {
-		temp->SetNodeValue(element);
+		temp->SetNodeNext(head);
 	}
 	head = temp;
 }
@@ -133,3 +133,165 @@ void S_LinkedList::Display() {
 
 
 //function definitions of doubly linked list
+void D_LinkedList::DLL_add_back(int element) {
+	Node_Two* temp = new Node_Two;
+	temp->SetNodeNext(nullptr);
+	temp->SetNodePrev(nullptr);
+	temp->SetNodeValue(element);
+	if (head == NULL) {
+		head = temp;
+	}
+	else {
+		Node_Two* ptr = head;
+		while (ptr->GetNodeNext() != nullptr) {
+			ptr = ptr->GetNodeNext();
+		}
+		ptr->SetNodeNext(temp);
+		temp->SetNodePrev(ptr);
+	}
+}
+
+void D_LinkedList::DLL_add_front(int element) {
+	Node_Two* temp = new Node_Two;
+	temp->SetNodeNext(nullptr);
+	temp->SetNodePrev(nullptr);
+	temp->SetNodeValue(element);
+	if (head == nullptr) {
+		head = temp;
+	}
+	else {
+		temp->SetNodeNext(head);
+		head->SetNodePrev(temp);
+	}
+	head = temp;
+}
+
+void D_LinkedList::DLL_delete_front() {
+	std::cout << std::endl;
+	if (head == NULL) {
+		std::cout << "\nList is empty!";
+		return;
+	}
+	if (head->GetNodeNext() == nullptr) {
+		Node_Two* temp = head;
+		head = head->GetNodeNext();
+		delete temp;
+	}
+	else {
+		Node_Two* temp = head;
+		head = head->GetNodeNext();
+		head->SetNodePrev(nullptr);
+		delete temp;
+	}
+}
+
+void D_LinkedList::DLL_delete_back() {
+	if (head == nullptr) {
+		std::cout << "\nList is Empty!!";
+		return;
+	}
+	else if(head->GetNodeNext() == nullptr) {
+		Node_Two* temp = head;
+		head = nullptr;
+		delete temp;
+	}
+	else {
+		Node_Two* ptr = head;
+		while (ptr->GetNodeNext() != nullptr) {
+			ptr = ptr->GetNodeNext();
+		}
+		Node_Two* prev = ptr->GetNodePrev();
+		prev->SetNodeNext(nullptr);
+		delete ptr;
+	}
+}
+
+void D_LinkedList::DLL_delete_element(int element) {
+	if (head == nullptr) {
+		std::cout << "\nList is Empty!!";
+		return;
+	}
+	if (head->GetNodeValue() == element) {
+		Node_Two* temp = head;
+		head = head->GetNodeNext();
+		delete temp;
+		return;
+	}
+	else {
+		Node_Two* ptr = head;
+		while (ptr && ptr->GetNodeValue() != element) {
+			ptr = ptr->GetNodeNext();
+		}
+		if (ptr == nullptr) {
+			std::cout << "Element not found!!";
+			return;
+		}
+		Node_Two* prev = ptr->GetNodePrev();
+		Node_Two* next = ptr->GetNodeNext();
+		prev->SetNodeNext(next);
+		delete ptr;
+	}
+}
+
+void D_LinkedList::DLL_delete_position(int position) {
+	if (head == nullptr) {
+		std::cout << "\nList Empty!!";
+		return;
+	}
+	if (position - 1 == 0) {
+		Node_Two* temp = head;
+		head = head->GetNodeNext();
+		if (head != nullptr) {
+			head->SetNodePrev(nullptr);
+		}
+		delete temp;
+		return;
+	}
+	else {
+		Node_Two* ptr = head;
+		int i = 0;
+		while (ptr && i != position - 1) {
+			ptr = ptr->GetNodeNext();
+			i++;
+		}
+		if (ptr == nullptr) {
+			std::cout << "\nPosition not found!!";
+			return;
+		}
+		if (ptr->GetNodeNext() == nullptr) {
+			Node_Two* prev = ptr->GetNodePrev();
+			prev->SetNodeNext(nullptr);
+			delete ptr;
+			return;
+		}
+		Node_Two* next = ptr->GetNodeNext();
+		Node_Two* prev = ptr->GetNodePrev();
+		prev->SetNodeNext(next);
+		next->SetNodePrev(prev);
+		delete ptr;
+	}
+}
+
+void D_LinkedList::Display() {
+	std::cout << std::endl;
+	if (head == nullptr) {
+		std::cout << "List is Empty!";
+		return;
+	}
+	else {
+		std::cout << "Traversing from front..\n";
+		Node_Two* ptr = head;
+		Node_Two* last = nullptr;
+		while (ptr) {
+			std::cout << ptr->GetNodeValue() << " ";
+			last = ptr;
+			ptr = ptr->GetNodeNext();
+		}
+
+		std::cout << std::endl << "Traversing from last...\n";
+		while (last) {
+			std::cout << last->GetNodeValue() << " ";
+			last = last->GetNodePrev();
+		}
+	}
+}

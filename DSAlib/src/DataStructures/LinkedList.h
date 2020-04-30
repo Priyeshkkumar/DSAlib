@@ -2,7 +2,7 @@
 #include"Node.h"
 
 class S_LinkedList {
-	Node* head;
+	Node* head = nullptr;
 public:
 	S_LinkedList(){
 		head = NULL;
@@ -36,7 +36,7 @@ public:
 };
 
 class D_LinkedList {
-	Node_Two* head;
+	Node_Two* head = nullptr;
 public:
 	D_LinkedList() {
 		head = NULL;
@@ -59,7 +59,7 @@ public:
 
 	~D_LinkedList() {
 		std::cout << std::endl << "Calling Destructor Doubly Linked List...";
-		Node_Two* temp;
+		Node_Two* temp = nullptr;
 		while (head) {
 			temp = head;
 			head = head->GetNodeNext();
