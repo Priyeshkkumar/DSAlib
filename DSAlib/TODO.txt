@@ -1,0 +1,6 @@
+1.Optmizations in Linked List 
+2.Stack using linked lists
+3.Queue using linked lists
+4.Binary Tree
+5.Binary Search Tree
+6.Balanced Binary Tree
