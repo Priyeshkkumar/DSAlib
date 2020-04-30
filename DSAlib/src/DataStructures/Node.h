@@ -27,16 +27,32 @@ public:
 
 //A class which inherits form Node class to extend it's functionality  
 //for support of two pointers pointing to next and previous nodes...
-class Node_With_Prev : public Node {
-	Node* prev;
+class Node_Two {
+	int value;
+	Node_Two* next;
+	Node_Two* prev;
 public:
-	Node_With_Prev() {
+	Node_Two() {
+		value = 0;
+		next = nullptr;
 		prev = nullptr;
 	}
-	Node* GetNodePrev() {
+	int GetNodeValue() {
+		return value;
+	}
+	Node_Two* GetNodeNext() {
+		return next;
+	}
+	Node_Two* GetNodePrev() {
 		return prev;
 	}
-	void SetNodePrev(Node* ptr) {
+	void SetNodeValue(int vertex) {
+		value = vertex;
+	}
+	void SetNodeNext(Node_Two* ptr) {
+		next = ptr;
+	}
+	void SetNodePrev(Node_Two* ptr) {
 		prev = ptr;
 	}
 };
