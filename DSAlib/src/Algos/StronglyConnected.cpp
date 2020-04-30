@@ -2,6 +2,9 @@
 
 #include"Algos.h"
 
+//use this algo only when using satck with array
+#ifdef STACK_USING_ARRAY
+
 Queue* SCC_DFS_One(DGraph* graph) {
 	int GVertex = graph->DG_GetVertex();
 	//array of boolean to store visited nodes
@@ -130,3 +133,5 @@ void StronglyConnected(DGraph* graph) {
 	SCC_DFS_Two(reverse_graph, SCC_queue);
 	delete reverse_graph;
 }
+
+#endif

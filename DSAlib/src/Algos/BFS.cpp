@@ -1,5 +1,8 @@
 #include"Algos.h"
 
+//use ths algo when using queue with array
+#ifdef QUEUE_USING_ARRAY
+
 void BFS(DGraph* graph, int start) {
 	//array of boolean to mark visited nodes
 	int* label;
@@ -28,3 +31,5 @@ void BFS(DGraph* graph, int start) {
 		}
 	}
 }
+
+#endif

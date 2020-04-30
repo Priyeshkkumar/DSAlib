@@ -25,8 +25,6 @@ public:
 };
 
 
-//A class which inherits form Node class to extend it's functionality  
-//for support of two pointers pointing to next and previous nodes...
 class Node_Two {
 	int value;
 	Node_Two* next;

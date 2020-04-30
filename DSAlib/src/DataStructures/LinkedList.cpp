@@ -64,7 +64,6 @@ void S_LinkedList::SLL_delete_back() {
 	}
 }
 
-//Add checker if user provides a position greater than size of linked list::TODO
 void S_LinkedList::SLL_delete_position(int position) {
 	if (position - 1 == 0) {
 		Node* temp = head;

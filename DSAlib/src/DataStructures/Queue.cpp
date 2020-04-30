@@ -1,5 +1,8 @@
 #include"Queue.h"
 
+
+#ifdef QUEUE_USING_ARRAY
+
 bool Queue::Qisfull() {
 	if (Qrear == Qfront && Qiterator >= Qsize)
 		return true;
@@ -45,3 +48,37 @@ void QDisplay(Queue queue) {
 		std::cout << queue.Qdequeue() << " ";
 	}
 }
+
+#endif
+
+#ifdef QUEUE_USING_LINKEDLIST
+
+bool Queue::QisEmpty() {
+	if (Qiterator == 0) {
+		return true;
+	}
+	return false;
+}
+
+void Queue::Qenqueue(int element) {
+	head->SLL_add_back(element);
+	Qiterator++;
+}
+
+int Queue::Qdequeue() {
+	if (QisEmpty()) {
+		std::cout << "\nQueue is empty";
+		return -1;
+	}
+	else {
+		int element = head->SLL_GetHeadValue();
+		head->SLL_delete_front();
+		Qiterator--;
+		return element;
+	}
+}
+
+void Queue::Display() {
+	head->Display();
+}
+#endif

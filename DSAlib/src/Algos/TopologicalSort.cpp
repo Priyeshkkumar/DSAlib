@@ -1,5 +1,8 @@
 #include"Algos.h"
 
+//use this algo when using stack with array
+#ifdef STACK_USING_ARRAY
+
 void TopologicalSort(DGraph* graph) {
 	//Do topological sorting only if it is a Directed Acyclic Graph(DAG)
 	if (!IsCycle(graph)) {
@@ -36,3 +39,5 @@ void TopologicalSort(DGraph* graph) {
 		std::cout << "\nGraph is not DAG, therefore Topological sort not possible!!";
 	}
 }
+
+#endif

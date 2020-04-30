@@ -1,6 +1,9 @@
 //Function to detect a cycle in a graph using DFS and Colors Symbolization
 #include"Algos.h"
 
+//use this algo only when using stack with array representation
+#ifdef STACK_USING_ARRAY
+
 //Enum to mark the color the of node
 enum class Color {
 	White,
@@ -67,3 +70,5 @@ bool IsCycle(DGraph* graph) {
 	delete stack;
 	return false;
 }
+
+#endif

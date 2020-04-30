@@ -1,6 +1,16 @@
+
+## TODO LIST ##
+
 1.Optmizations in Linked List 
-2.Stack using linked lists
-3.Queue using linked lists
+2.Stack using linked lists - done
+3.Queue using linked lists - done
 4.Binary Tree
 5.Binary Search Tree
 6.Balanced Binary Tree
+7.All sorting algos using array
+8.All sorting algos using linked list
+
+## IMP ##
+
+1.Line 70 - Stack.cpp
+2.Line 149 - Dijkstra.cpp

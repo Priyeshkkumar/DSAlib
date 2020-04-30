@@ -8,6 +8,10 @@ public:
 		head = NULL;
 	}
 
+	//function to return node value of head
+	int SLL_GetHeadValue() {
+		return head->GetNodeValue();
+	}
 	//function to add element at back of linked list
 	void SLL_add_back(int element);
 	//function to add element at front of linked list
@@ -41,7 +45,6 @@ public:
 	D_LinkedList() {
 		head = NULL;
 	}
-
 	//function to add element at back of linked list
 	void DLL_add_back(int element);
 	//function to add element at front of linked list

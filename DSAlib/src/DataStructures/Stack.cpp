@@ -1,5 +1,7 @@
 #include"Stack.h"
 
+#ifdef STACK_USING_ARRAY
+
 bool Stack::SisFull() {
 	if (Siterator == Ssize) {
 		return true;
@@ -46,3 +48,40 @@ int Stack::Stop() {
 	return temp;
 
 }
+
+#endif
+
+#ifdef STACK_USING_LINKEDLIST
+
+bool Stack::SisEmpty() {
+	if (Siterator == 0) {
+		return true;
+	}
+	return false;
+}
+
+void Stack::Spush(int element) {
+	head->SLL_add_front(element);
+	Siterator++;
+}
+
+int Stack::Spop() {
+
+	//#IMP: Why getting error when using if(head == nullptr)!!
+	if (SisEmpty()) {
+		std::cout << "\nStack Empty";
+		return -1;
+	}
+	else {
+		int element = head->SLL_GetHeadValue();
+		head->SLL_delete_front();
+		Siterator--;
+		return element;
+	}
+}
+
+void Stack::Display() {
+	head->Display();
+}
+
+#endif

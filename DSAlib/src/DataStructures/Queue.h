@@ -1,5 +1,11 @@
 #pragma once
 #include<iostream>
+#include"LinkedList.h"
+
+//define QUEUE_USING_ARRAY
+#define QUEUE_USING_LINKEDLIST
+
+#ifdef QUEUE_USING_ARRAY
 
 class Queue {
 	int Qsize, Qfront, Qrear, Qiterator;
@@ -40,4 +46,37 @@ public:
 };
 
 void QDisplay(Queue queue);
- 
+
+#endif
+
+
+#ifdef QUEUE_USING_LINKEDLIST
+
+class Queue {
+	int Qiterator;
+	S_LinkedList* head;
+public:
+	//using linked lists therefore not adding a size factor
+	Queue() {
+		std::cout << "\nInside Queue!";
+		Qiterator = 0;
+		head = new S_LinkedList;
+	}
+	//function to check wheter queue is empty
+	bool QisEmpty();
+	//function to add item to queue
+	void Qenqueue(int value);
+	//function to remove item to queue
+	int Qdequeue();
+
+	void Display();
+
+	~Queue() {
+		std::cout << "\nDestructor Queue!!";
+		delete head;
+	}
+};
+
+void QDisplay(Queue queue);
+
+#endif

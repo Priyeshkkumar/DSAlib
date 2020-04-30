@@ -1,5 +1,8 @@
 #include"Algos.h"
 
+//use this algo only when using stack with arrray representation
+#ifdef STACK_USING_ARRAY
+
 void DFS(DGraph* graph, int start) {
 	int* label;
 	int Gvertex = graph->DG_GetVertex();
@@ -26,3 +29,5 @@ void DFS(DGraph* graph, int start) {
 		}
 	}
 }
+
+#endif
