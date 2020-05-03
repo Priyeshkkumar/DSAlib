@@ -34,7 +34,9 @@ public:
 	//Sorting Algorithms
 	//1.SelectionSort - SelectionSort.cpp
 	void SLL_SelectionSort();
-
+	//2.Bubble Sort
+	void SLL_BubbleSort();
+		
 	//functoion to 
 	~S_LinkedList() {
 		std::cout << std::endl << "Calling Destructor Singly Linked List...";

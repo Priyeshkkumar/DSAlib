@@ -10,7 +10,7 @@ int main() {
 		std::cin >> arr[i];
 	}
 
-	SelectionSort(arr, size);*/
+	BubbleSort(arr, size);*/
 
 	S_LinkedList* head = new S_LinkedList;
 
@@ -21,8 +21,8 @@ int main() {
 	head->SLL_add_back(11);
 	head->Display();
 
-	head->SLL_SelectionSort();
+	head->SLL_BubbleSort();
 
 	delete head;
-	/*delete[] arr;*/
+	//delete[] arr;
 }

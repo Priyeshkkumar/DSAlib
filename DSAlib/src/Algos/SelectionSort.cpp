@@ -1,16 +1,6 @@
 #include"Algos.h"
+#include"SwapFunctions.h"
 
-void swap_sorting(int& a, int& b) {
-	int temp = a;
-	a = b;
-	b = temp;
-}
-
-void swap_sorting(Node* a, Node* b) {
-	int temp = a->GetNodeValue();
-	a->SetNodeValue(b->GetNodeValue());
-	b->SetNodeValue(temp);
-}
 //Selection Sort for array
 void SelectionSort(int* ptr, int size) {
 	int i, j;
@@ -24,7 +14,7 @@ void SelectionSort(int* ptr, int size) {
 		swap_sorting(ptr[min_index], ptr[i]);
 	}
 
-	std::cout << std::endl << "Sorted array:" << std::endl;
+	std::cout << std::endl << "After Selection Sorting:" << std::endl;
 	for (int i = 0; i < size; ++i) {
 		std::cout << ptr[i] << " ";
 	}
@@ -46,7 +36,7 @@ void S_LinkedList::SLL_SelectionSort() {
 		ptr1 = ptr1->GetNodeNext();
 	}
 
-	std::cout <<std::endl << "List after sorting:" << std::endl;
+	std::cout <<std::endl << "List after Selection sorting:" << std::endl;
 	Node* temp = head;
 	while (temp) {
 		std::cout << temp->GetNodeValue() << " ";

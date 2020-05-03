@@ -18,5 +18,7 @@ void Dijkstra(DWGraph* graph, int source);
 
 
 //Sorting Algorithms
+
 void SelectionSort(int* ptr, int size);
-void SelectionSort(S_LinkedList* SLL_ptr);
+
+void BubbleSort(int* ptr, int size);

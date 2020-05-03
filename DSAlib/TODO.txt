@@ -10,8 +10,8 @@ Balanced Binary Search Tree
 All sorting algos using array
 All sorting algos using linked list
 -Insertion Sort
--Bubble Sort
--Selection Sort
+-Bubble Sort - done
+-Selection Sort - done
 -Quick Sort
 -Merge Sort
 -Heap Sort

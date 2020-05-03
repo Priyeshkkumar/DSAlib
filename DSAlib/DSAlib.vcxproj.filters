@@ -39,6 +39,9 @@
     <ClInclude Include="src\DataStructures\BinarySearchTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Algos\SwapFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Algos\BFS.cpp">
@@ -78,6 +81,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Algos\SelectionSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Algos\BubbleSort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
