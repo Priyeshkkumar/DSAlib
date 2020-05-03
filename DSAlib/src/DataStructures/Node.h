@@ -54,3 +54,33 @@ public:
 		prev = ptr;
 	}
 };
+
+class Node_Tree {
+	int value;
+	Node_Tree* right;
+	Node_Tree* left;
+public:
+	Node_Tree() {
+		value = 0;
+		right = nullptr;
+		left = nullptr;
+	}
+	int GetNodeValue() {
+		return value;
+	}
+	Node_Tree* GetNodeRight() {
+		return right;
+	}
+	Node_Tree* GetNodeLeft() {
+		return left;
+	}
+	void SetNodeValue(int vertex) {
+		value = vertex;
+	}
+	void SetNodeRight(Node_Tree* ptr) {
+		right = ptr;
+	}
+	void SetNodeLeft(Node_Tree* ptr) {
+		left = ptr;
+	}
+};

@@ -1,10 +1,9 @@
 
 ## TODO LIST ##
 
-Optmizations in Linked List 
 Stack using linked lists - done
 Queue using linked lists - done
-Binary Search Tree
+Binary Search Tree - done
 Balanced Binary Search Tree
 All sorting algos using array
 All sorting algos using linked list
@@ -13,6 +12,12 @@ All sorting algos using linked list
 
 1.Line 70 - Stack.cpp
 2.Line 149 - Dijkstra.cpp
+3.Line 76 - BinarySearchTree.cpp
+
+## OPTIMIZATIONS ##
+
+Optimizations of delete function in BST delete
+Optmizations in Linked List 
 
 ## TODO LATER ##
 

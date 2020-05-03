@@ -1,5 +1,7 @@
 #include"LinkedList.h"
 
+
+
 int main() {
 	D_LinkedList* head = new D_LinkedList;
 	/*head->SLL_add_back(1);

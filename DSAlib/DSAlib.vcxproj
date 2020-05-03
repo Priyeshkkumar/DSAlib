@@ -147,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Algos\Algos.h" />
-    <ClInclude Include="src\DataStructures\BinaryTree.h" />
+    <ClInclude Include="src\DataStructures\BinarySearchTree.h" />
     <ClInclude Include="src\DataStructures\graph.h" />
     <ClInclude Include="src\DataStructures\Heap.h" />
     <ClInclude Include="src\DataStructures\LinkedList.h" />
@@ -162,7 +162,7 @@
     <ClCompile Include="src\Algos\IsCycle.cpp" />
     <ClCompile Include="src\Algos\StronglyConnected.cpp" />
     <ClCompile Include="src\Algos\TopologicalSort.cpp" />
-    <ClCompile Include="src\DataStructures\BinaryTree.cpp" />
+    <ClCompile Include="src\DataStructures\BinarySearchTree.cpp" />
     <ClCompile Include="src\DataStructures\graph.cpp" />
     <ClCompile Include="src\DataStructures\Heap.cpp" />
     <ClCompile Include="src\DataStructures\LinkedList.cpp" />

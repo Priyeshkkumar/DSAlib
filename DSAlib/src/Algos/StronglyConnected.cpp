@@ -5,6 +5,17 @@
 //use this algo only when using satck with array
 #ifdef STACK_USING_ARRAY
 
+
+void StronglyConnected(DGraph* graph) {
+	//Customized DFS that outputs a array;
+	Queue* SCC_queue = SCC_DFS_One(graph);
+	DGraph* reverse_graph = SCC_ReverseEdges(graph);
+	Display(reverse_graph);
+	SCC_DFS_Two(reverse_graph, SCC_queue);
+	delete reverse_graph;
+}
+
+
 Queue* SCC_DFS_One(DGraph* graph) {
 	int GVertex = graph->DG_GetVertex();
 	//array of boolean to store visited nodes
@@ -123,15 +134,6 @@ void Display(DGraph* reverse_graph) {
 		}
 	}
 	std::cout << "\n\n####################################\n";
-}
-
-void StronglyConnected(DGraph* graph) {
-	//Customized DFS that outputs a array;
-	Queue* SCC_queue = SCC_DFS_One(graph);
-	DGraph* reverse_graph = SCC_ReverseEdges(graph);
-	Display(reverse_graph);
-	SCC_DFS_Two(reverse_graph, SCC_queue);
-	delete reverse_graph;
 }
 
 #endif

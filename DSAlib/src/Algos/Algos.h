@@ -2,7 +2,7 @@
 
 #pragma once
 #include"graph.h"
-#include"BinaryTree.h"
+#include"BinarySearchTree.h"
 #include"Queue.h"
 #include"Stack.h"
 #include"Heap.h"
