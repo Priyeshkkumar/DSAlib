@@ -3,10 +3,13 @@
 
 class S_LinkedList {
 	Node* head = nullptr;
+
+
 public:
 	S_LinkedList(){
 		head = NULL;
 	}
+
 
 	//function to return node value of head
 	int SLL_GetHeadValue() {
@@ -26,7 +29,13 @@ public:
 	void SLL_delete_element(int element);
 	//function to display linked list
 	void Display();
+	
 
+	//Sorting Algorithms
+	//1.SelectionSort - SelectionSort.cpp
+	void SLL_SelectionSort();
+
+	//functoion to 
 	~S_LinkedList() {
 		std::cout << std::endl << "Calling Destructor Singly Linked List...";
 		Node* temp = nullptr;

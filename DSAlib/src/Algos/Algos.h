@@ -6,6 +6,7 @@
 #include"Queue.h"
 #include"Stack.h"
 #include"Heap.h"
+#include"LinkedList.h"
 
 //Graph Algorithms
 void BFS(DGraph* graph, int start);
@@ -14,3 +15,8 @@ bool IsCycle(DGraph* graph);
 void TopologicalSort(DGraph* graph);
 void StronglyConnected(DGraph* graph);
 void Dijkstra(DWGraph* graph, int source);
+
+
+//Sorting Algorithms
+void SelectionSort(int* ptr, int size);
+void SelectionSort(S_LinkedList* SLL_ptr);

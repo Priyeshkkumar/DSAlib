@@ -160,6 +160,7 @@
     <ClCompile Include="src\Algos\DFS.cpp" />
     <ClCompile Include="src\Algos\Dijkstra.cpp" />
     <ClCompile Include="src\Algos\IsCycle.cpp" />
+    <ClCompile Include="src\Algos\SelectionSort.cpp" />
     <ClCompile Include="src\Algos\StronglyConnected.cpp" />
     <ClCompile Include="src\Algos\TopologicalSort.cpp" />
     <ClCompile Include="src\DataStructures\BinarySearchTree.cpp" />
