@@ -4,6 +4,8 @@
 Stack using linked lists - done
 Queue using linked lists - done
 Binary Search Tree - done
+
+Destructor for BST
 Balanced Binary Search Tree
 All sorting algos using array
 All sorting algos using linked list
