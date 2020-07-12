@@ -341,4 +341,7 @@ healthchecksdb
 
 #Meson Builddir
 [Bb]uilddir/
+[bB]uild/
 
+#TODO file
+Todo.txt
