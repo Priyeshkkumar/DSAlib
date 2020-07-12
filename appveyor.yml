@@ -32,6 +32,5 @@ build_script:
   - echo Building on %arch% with %compiler%
   - meson --backend=ninja --default-library=both -Dtests=true -Dsample=true build
   - ninja -C build
-
-test_script:
-  - meson test -C build --print-errorlogs
+  
+#Add scripts for testing
