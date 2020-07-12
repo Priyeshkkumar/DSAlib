@@ -18,4 +18,4 @@ ninja
 ````
 Use `meson configure builddir` for configuration.
 
-__Contributions of all kinds are welcomed!__
+__Contributions of all kinds are welcome!__
