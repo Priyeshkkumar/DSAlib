@@ -1,3 +1,5 @@
+[![Appveyor status](https://ci.appveyor.com/api/projects/status/an3isk91jx8vmwh6?svg=true)](https://ci.appveyor.com/project/Priyeshkkumar/dsalib)
+
 # DSA
 
 DSA is a C/C++ library.
