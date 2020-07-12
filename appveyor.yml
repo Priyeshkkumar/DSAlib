@@ -4,8 +4,6 @@ environment:
   matrix:
     - arch: x64
       compiler: mingw
-    - arch: x86
-      compiler: msvc2019
     - arch: x64
       compiler: msvc2019
 
