@@ -1,0 +1,1 @@
+option( 'test_programs', type:'boolean', value:'false' )
